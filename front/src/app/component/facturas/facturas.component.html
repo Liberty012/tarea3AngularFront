@@ -1,0 +1,10 @@
+<form (ngSubmit)="crearFactura()">
+    <div>
+      <label for="importeTotal">Importe Total:</label>
+      <input type="number" id="importeTotal" name="importeTotal" [(ngModel)]="nuevaFactura.importeTotal" required>
+    </div>
+  
+  
+    <button type="submit">Crear Factura</button>
+  </form>
+  

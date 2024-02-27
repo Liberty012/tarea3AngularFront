@@ -1,0 +1,11 @@
+<h2>Buscar Cliente</h2>
+
+<input type="text" [(ngModel)]="searchInput" (input)="searchCliente()" placeholder="Buscar por nombre del cliente...">
+
+<h2>Resultados de la Búsqueda</h2>
+
+<ul>
+  <li *ngFor="let cliente of clientes">
+    {{ cliente.nombre }} {{ cliente.primerApellido }} {{ cliente.segundoApellido }} - {{ cliente.email }}
+  </li>
+</ul>
